@@ -4,7 +4,6 @@ import sqlite3
 from tkinter import *
 from reg import Registration
 from logo import logo
-from Log import Logg
 #comment
 class login(tk.Tk):
     def __init__(self):
