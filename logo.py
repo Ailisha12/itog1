@@ -47,17 +47,22 @@ class logo(tk.Toplevel):
         notebook = ttk.Notebook(self, bootstyle='success')
         notebook.pack(expand=True, fill=BOTH)
 
-        window = ttk.Frame(notebook)
         window1 = ttk.Frame(notebook)
         window2 = ttk.Frame(notebook)
         window3 = ttk.Frame(notebook)
-
-        window.pack(fill=BOTH, expand=True)
+        window = ttk.Frame(notebook)
+        
+        
         window1.pack(fill=BOTH, expand=True)
         window2.pack(fill=BOTH, expand=True)
         window3.pack(fill=BOTH, expand=True)
+        window.pack(fill=BOTH, expand=True)
 
-
+        notebook.add(window1,text='Фильтр по ip')
+        notebook.add(window2,text='Фильтр по дате')
+        notebook.add(window3,text='Фильтр по ip с датой')
+        notebook.add(window,text='База данных')
+        
         columns = ('IP','Время','Метод','Статус','Host')
 
         treeview = ttk.Treeview(window, bootstyle="success",columns=columns,show='headings')
@@ -440,9 +445,3 @@ class logo(tk.Toplevel):
         info3 = tk.Label(window3, text='')
         info3.pack(pady=10)
         info3.place(x=420, y=580)
-
-        
-        notebook.add(window,text='База данных')
-        notebook.add(window1,text='Фильтр по ip')
-        notebook.add(window2,text='Фильтр по дате')
-        notebook.add(window3,text='Фильтр по ip с датой')
