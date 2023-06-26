@@ -312,50 +312,50 @@ class logo(tk.Toplevel):
 
         label_month = Label(window2 , text="Выберите месяц", font=('arial', 25), bd=18)
         label_month.pack(pady=10)
-        label_month.place(x=80, y=240)
+        label_month.place(x=400, y=120)
 
         monthID = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         month = ttk.Combobox(window2, font=('arial', 15), values=monthID)
         month.pack(pady=10)
-        month.place(x=100, y=300)
+        month.place(x=400, y=180)
 
         label_year = Label(window2 , text="Напишите год", font=('arial', 25), bd=18)
         label_year.pack(pady=10)
-        label_year.place(x=80, y=340)
+        label_year.place(x=680, y=120)
 
         year = Entry(window2 , font=('arial', 20), width=15)
         year.pack(pady=10)
-        year.place(x=100, y=420)
+        year.place(x=700, y=180)
 
        
         label_end = Label(window2 , text="До", font=('arial', 25), bd=18)
         label_end.pack(pady=10)
-        label_end.place(x=680, y=60)
+        label_end.place(x=80, y=240)
 
         label_day_end = Label(window2 , text="Напишите день", font=('arial', 25), bd=18)
         label_day_end.pack(pady=10)
-        label_day_end.place(x=680, y=120)
+        label_day_end.place(x=80, y=300)
 
         end_day = Entry(window2 , font=('arial', 20), width=15)
         end_day.pack(pady=10)
-        end_day.place(x=700, y=180)
+        end_day.place(x=100, y=360)
 
         label_month_end = Label(window2 , text="Выберите месяц", font=('arial', 25), bd=18)
         label_month_end.pack(pady=10)
-        label_month_end.place(x=680, y=240)
+        label_month_end.place(x=400, y=300)
 
         monthID_end = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         end_month = ttk.Combobox(window2, font=('arial', 15), values=monthID_end)
         end_month.pack(pady=10)
-        end_month.place(x=700, y=300)
+        end_month.place(x=400, y=360)
 
         label_year_end = Label(window2 , text="Напишите год", font=('arial', 25), bd=18)
         label_year_end.pack(pady=10)
-        label_year_end.place(x=680, y=340)
+        label_year_end.place(x=680, y=300)
 
         end_year = Entry(window2 , font=('arial', 20), width=15)
         end_year.pack(pady=10)
-        end_year.place(x=700, y=420)
+        end_year.place(x=700, y=360)
 
         btn2 = Button(window2 , text="Выполнить", font=('arial', 18), width=30, command=filter_date)
         btn2.pack(pady=10)
@@ -370,11 +370,11 @@ class logo(tk.Toplevel):
 
         label_ip2 = Label(window3 , text="Напишите IP", font=('arial', 25), bd=18)
         label_ip2.pack(pady=10)
-        label_ip2.place(x=400, y=240)
+        label_ip2.place(x=400, y=120)
 
         ips = Entry(window3 , font=('arial', 20), width=15)
         ips.pack(pady=10)
-        ips.place(x=400, y=300)
+        ips.place(x=400, y=180)
 
         
 
